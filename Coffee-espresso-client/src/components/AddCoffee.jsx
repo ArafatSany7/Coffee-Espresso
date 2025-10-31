@@ -1,4 +1,28 @@
 const AddCoffee = () => {
+  const handleAddCoffee = (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+    const name = form.name.value;
+    const quantity = form.quantity.value;
+    const supplier = form.supplier.value;
+    const taste = form.taste.value;
+    const category = form.category.value;
+    const details = form.details.value;
+    const photo = form.photo.value;
+
+    const newCoffe = {
+      name,
+      quantity,
+      supplier,
+      taste,
+      category,
+      details,
+      photo,
+    };
+    console.log(newCoffe);
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-[#F4F3F0] p-8 rounded-lg shadow-lg w-full max-w-4xl">
@@ -14,7 +38,7 @@ const AddCoffee = () => {
           using Lorem Ipsum is that it has a more-or-less normal distribution of
           letters, as opposed to using Content here.
         </p>
-        <form>
+        <form onSubmit={handleAddCoffee}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block mb-1 font-semibold text-gray-700">
@@ -87,7 +111,7 @@ const AddCoffee = () => {
                 Photo
               </label>
               <input
-                type="url"
+                type="text"
                 name="photo"
                 className="input w-full"
                 placeholder="Enter photo URL"
