@@ -22,16 +22,18 @@ const AddCoffee = () => {
               </label>
               <input
                 type="text"
+                name="name"
                 className="input w-full"
                 placeholder="Enter coffee name"
               />
             </div>
             <div>
               <label className="block mb-1 font-semibold text-gray-700">
-                Chef
+                Quantity
               </label>
               <input
                 type="text"
+                name="quantity"
                 className=" input w-full"
                 placeholder="Enter coffee chef"
               />
@@ -42,6 +44,7 @@ const AddCoffee = () => {
               </label>
               <input
                 type="text"
+                name="supplier"
                 className="input w-full"
                 placeholder="Enter coffee supplier"
               />
@@ -52,6 +55,7 @@ const AddCoffee = () => {
               </label>
               <input
                 type="text"
+                name="taste"
                 className="input w-full"
                 placeholder="Enter coffee taste"
               />
@@ -62,6 +66,7 @@ const AddCoffee = () => {
               </label>
               <input
                 type="text"
+                name="category"
                 className="input w-full"
                 placeholder="Enter coffee category"
               />
@@ -72,6 +77,7 @@ const AddCoffee = () => {
               </label>
               <input
                 type="text"
+                name="details"
                 className="input w-full"
                 placeholder="Enter coffee details"
               />
@@ -82,6 +88,7 @@ const AddCoffee = () => {
               </label>
               <input
                 type="url"
+                name="photo"
                 className="input w-full"
                 placeholder="Enter photo URL"
               />
@@ -89,6 +96,7 @@ const AddCoffee = () => {
           </div>
           <button
             type="submit"
+            name="submit"
             className="mt-8 w-full py-2 bg-yellow-200 border border-gray-400 rounded text-gray-800 font-semibold text-lg hover:bg-yellow-300 hover:scale-105 transition"
           >
             Add Coffee
